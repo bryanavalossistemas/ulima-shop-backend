@@ -13,7 +13,7 @@ router.post(
   ProductController.createProduct
 );
 
-router.get("/", authenticate, authorize, ProductController.getAllProducts);
+router.get("/", ProductController.getAllProducts);
 
 router.get("/active", ProductController.getAllProductsActive);
 
