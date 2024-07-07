@@ -15,7 +15,6 @@ export class UserController {
   static async createAccount(req, res) {
     try {
       await sequelize.transaction(async (t) => {
-        console.log(req.body);
         const { firstName, lastName, email, password } = req.body;
         if (
           !firstName ||
@@ -258,7 +257,6 @@ export class UserController {
   }
 
   static async getUser(req, res) {
-    console.log("req.params.id");
     try {
       const idParam = req.params.id;
       const id = Number(idParam);

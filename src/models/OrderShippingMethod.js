@@ -13,7 +13,7 @@ const OrderShippingMethod = sequelize.define(
       type: DataTypes.STRING,
     },
     price: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.FLOAT,
     },
   },
   {
